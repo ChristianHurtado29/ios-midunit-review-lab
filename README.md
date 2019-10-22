@@ -98,7 +98,7 @@ Input: `[3,4.5,7.5,2,1]`
 Output: `3.6`
 Answer:
 ```
-var randomArr = [1.0,5.0,2.0,4.0,1.0,4.0]
+var randomArr = [3,4.5,7.5,2,1]
 let firstNum = randomArr.reduce(0,+)
 let secNum = Double(randomArr.count)
 let avgAns = firstNum / secNum
