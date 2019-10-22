@@ -8,7 +8,11 @@
 Input: `Hello, there`
 
 Output: `HELLO, THERE`
-
+Answer
+```
+let string = "Hello, there"
+print(string.uppercased())
+```
 2. **Given a String, return a String alternating between uppercase and lowercase letters**
 
 
@@ -16,12 +20,28 @@ Input: `Hello, there`
 
 Output: `HeLlO, tHeRe`
 
+Answer:
+```
+let string = "Hello, there"
+
+let stringAr = Array(string)
+
+for (index, char) in stringAr.enumerated() {
+    if index % 2 == 0 {
+        print(char.uppercased(),terminator:"")
+    } else {
+        print(char,terminator:"")
+}
+}
+```
 
 3. **Given a String, return a String with all occurrences of a given letter removed**
 
 Input: `Hello, there`
 
 Output: `Hllo, thr`
+
+Answer:
 
 
 ## Arrays
