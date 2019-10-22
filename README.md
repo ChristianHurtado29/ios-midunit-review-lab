@@ -42,7 +42,13 @@ Input: `Hello, there`
 Output: `Hllo, thr`
 
 Answer:
+```
+let string = "Hello, there"
 
+string = string.replacingOccurrences(of: "e", with: "")
+
+print(string)
+```
 
 ## Arrays
 
@@ -53,24 +59,51 @@ Input: `[1,5,2,4,1,4]`
 
 Output: `5`
 
+Answer:
+```
+var randomArr = [1,5,2,4,1,4]
+
+var maxRan = randomArr.max() ?? 0
+print(maxRan)
+```
 2. **Given an array of type [Int], return the smallest element**
 
 Input: `[1,5,2,4,1,4]`
 
 Output: `1`
+Answer:
+```
+var randomArr = [1,5,2,4,1,4]
+
+var minRan = randomArr.min() ?? 0
+print(minRan)
+
+```
 
 3. **Given an array of type [Int], return its sum**
 
 Input: `[1,5,2,4,1,4]`
 
 Output: `17`
+Answer:
+```
+var randomArr = [1,5,2,4,1,4]
+print(randomArr.reduce(0,+))
+```
 
 4. **Given an array of type [Double], return its average**
 
 Input: `[3,4.5,7.5,2,1]`
 
 Output: `3.6`
-
+Answer:
+```
+var randomArr = [1.0,5.0,2.0,4.0,1.0,4.0]
+let firstNum = randomArr.reduce(0,+)
+let secNum = Double(randomArr.count)
+let avgAns = firstNum / secNum
+print(avgAns)
+```
 5. **Given an array of type [Double] and a Double, return the sum of all numbers in the array greater than a given number**
 
 Input: `[3,4.5,7.5,2,1], 3`
