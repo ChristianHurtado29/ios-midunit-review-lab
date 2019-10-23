@@ -109,20 +109,43 @@ print(avgAns)
 Input: `[3,4.5,7.5,2,1], 3`
 
 Output: `12`
-
-
+Answer:
+```
+var sum = 0.0
+let array = [3,4.5,7.5,2,1]
+for num in array{
+    if num > 3{
+    sum += num
+    }
+}
+print(sum)
+```
 6. **Given an array of type [Double], return the product of all the elements**
 
 Input: `[3,4.5,7.5,2,1]`
 
 Output: `202.5`
+Answer:
+```
+var multiple = 1.0
+let array = [3,4.5,7.5,2,1]
+for num in array{
+    multiple *= num
+    }
+print(multiple)
+
+```
 
 7. **Given an array of type [Int], return the second smallest value in the array**
 
 Input: `[3,6,1,9,4,8]`
 
 Output: `3`
-
+Answer:
+```
+let array = [3,6,1,9,4,8].sorted(by: <)
+print(array[1])
+```
 ## Optionals
 
 1. **Given an array of type [String?] return an array of [String] removing all nil values**
@@ -130,6 +153,19 @@ Output: `3`
 Input: `[nil, "We", "come", nil, "in", "peace"]`
 
 Output: `["We", "come", "in", "peace"]`
+Answer:
+```
+var array = [nil, "We", "come", nil, "in", "peace"]
+var newArray = [String]()
+for str in array {
+    if let unwrapStr = str {
+        newArray.append(unwrapStr)
+    } else {
+        print("not valid value, \(str)")
+    }
+}
+print(newArray)
+```
 
 2. **Given an array of type [String?]? return an array of [String] removing all nil values**
 
